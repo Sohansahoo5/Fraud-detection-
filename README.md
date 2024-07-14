@@ -18,13 +18,17 @@ Comparing the performance of these models using various metrics to identify the 
 Data Analysis and Preparation:
 
 Conducted exploratory data analysis (EDA) to understand the distribution and characteristics of the data.
+
 Normalized and scaled the features (Time and Amount) to ensure consistency and improve model performance.
+
 Dropped less important features based on feature importance from the Random Forest model.
 
 Model Implementation:
 
 Isolation Forest: Trained the model to isolate anomalies based on the concept of random partitioning.
+
 Local Outlier Factor: Utilized the local density of data points to identify outliers.
+
 Support Vector Machine (OneClassSVM): Implemented a model to separate normal transactions from anomalies using a hyperplane in a high-dimensional space.
 
 Feature Selection with Random Forest:
@@ -35,7 +39,8 @@ Used a Random Forest classifier to determine feature importance and selected the
 
 Evaluated models using metrics such as accuracy, F1 score, recall, and confusion matrix to determine their effectiveness in detecting fraud.
 Compared the performance of all models to identify the one with the best recall value, aiming to minimize False Negatives and ensure that few fraudulent transactions are missed.
-Result:
+
+# Result:
 
 Best Performing Model: The OneClassSVM model achieved the highest recall value, making it the most effective in identifying fraudulent transactions while minimizing False Negatives.
 Random Forest for Feature Selection: This step improved the overall model performance by focusing on the most significant features.
